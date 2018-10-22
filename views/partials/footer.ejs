@@ -1,0 +1,156 @@
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+    <!-- Footer Links -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center footer-top pt-5 mb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/">Home</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/opslagruimte">Opslagruimte</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/oefenruimte">Oefenruimte</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/contact">Contact</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/prijzen">Prijzen</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="/avg">AVG</a>
+          </h6>
+        </div>
+
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <!--<div class="row d-flex text-center text-light justify-content-center mb-md-0 mb-4">-->
+
+          
+      <!--  <div class="col-md-8 col-12 mt-5">-->
+      <!--    <p style="line-height: 1.7rem">-->
+            <!--Bokslootdwarsweg 20<br>-->
+            <!--7821 AV Emmen<br>-->
+            <!--info@ruimtevrij.nl<br>-->
+            <!--06-55137107<br>-->
+            <!--06-11860706-->
+            <!--(na 4 uur)-->
+      <!--    </div>-->
+          
+
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+      <!-- Grid row-->
+      <!--<div class="row pb-3">-->
+
+        <!-- Grid column -->
+      <!--  <div class="col-md-12">-->
+
+      <!--    <div class="mb-5 flex-center">-->
+
+            <!-- Facebook -->
+      <!--      <a class="fb-ic">-->
+      <!--        <i class="fa fa-facebook fa-lg white-text mr-4"> </i>-->
+      <!--      </a>-->
+            <!-- Twitter -->
+      <!--      <a class="tw-ic">-->
+      <!--        <i class="fa fa-twitter fa-lg white-text mr-4"> </i>-->
+      <!--      </a>-->
+            <!-- Google +-->
+      <!--      <a class="gplus-ic">-->
+      <!--        <i class="fa fa-google-plus fa-lg white-text mr-4"> </i>-->
+      <!--      </a>-->
+            <!--Linkedin -->
+      <!--      <a class="li-ic">-->
+      <!--        <i class="fa fa-linkedin fa-lg white-text mr-4"> </i>-->
+      <!--      </a>-->
+            <!--Instagram-->
+      <!--      <a class="ins-ic">-->
+      <!--        <i class="fa fa-instagram fa-lg white-text mr-4"> </i>-->
+      <!--      </a>-->
+            <!--Pinterest-->
+      <!--      <a class="pin-ic">-->
+      <!--        <i class="fa fa-pinterest fa-lg white-text"> </i>-->
+      <!--      </a>-->
+
+      <!--    </div>-->
+
+      <!--  </div>-->
+        <!-- Grid column -->
+
+      <!--</div>-->
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Gemaakt door:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> 3DWD</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(54.78451455,6.89582385);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "Avondschool Emmen"
+  });
+  infowindow.open(map,marker);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoLGMo0sQvfr6BgQZTclIEx8s3Ovw0SzI&callback=myMap"></script>  
+</html>
+
+
+                    <!--<h5 class="signature text-light">-->
+                    <!--    <STRONG>-->
+                    <!--       <a class="btn btn-outline-light animated fadeInUpBig d32s"> /CODE:3DWD/ </a>-->
+                    <!--    </STRONG>-->
+                    <!--</h5>-->

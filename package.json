@@ -1,0 +1,26 @@
+{
+  "name": "ruimtevrij",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nkvnl/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nkvnl/portfolio/issues"
+  },
+  "homepage": "https://github.com/Nkvnl/portfolio#readme",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "express-robots-txt": "^0.4.0",
+    "express-sitemap": "^1.8.0",
+    "nodemailer": "^4.6.8"
+  }
+}

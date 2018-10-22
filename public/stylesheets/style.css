@@ -1,0 +1,196 @@
+body{
+  padding-top:90px!important;
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%!important;
+}
+
+h1,h2{
+  font-family: 'Teko', sans-serif!important;
+}
+
+span{
+  color:#266DB2;
+}
+
+span.white{
+  color:white;
+}
+
+a:hover{
+  color:white!important;
+  text-decoration:none;
+}
+
+p{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right:0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index:1000!important;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+  
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+  box-shadow:0px 10px 20px rgba(0,0,0,0.6);
+  z-index:1000!important;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+  box-shadow:0px 10px 20px rgba(0,0,0,0.6);
+  z-index:1000!important;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+  box-shadow:0px 10px 20px rgba(0,0,0,0.6);
+}
+
+
+.navbar{
+  background:#266DB2!important;
+  font-family: 'Teko', sans-serif!important;
+  color:black!important;
+  box-shadow:0px 20px 40px rgba(0,0,0,0.4);
+}
+
+.navbar-brand{
+  color:black;
+}
+
+.navbar .nav-link{
+  font-family: 'Teko', sans-serif;
+  color:white;
+  font-size:24px;
+}
+
+.navbar-toggler-icon{
+ color:white; 
+}
+
+#Breadcrumb ul {
+  font-family: 'Titillium Web', sans-serif;
+  list-style-type:none!important;
+}
+
+#Breadcrumb li a{
+  color:black!important;
+}
+
+#main{
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/14568109_1500373169977433_8918259016496775245_n.jpg?_nc_cat=101&_nc_ht=scontent-ams3-1.xx&oh=9e3917c7aab01636671f060de63779e6&oe=5C875AF8");
+  background-size:cover;
+  height:700px;
+}
+
+@media only screen and (max-width: 600px) {
+  #main{
+    height:100vh;
+  }
+  .main{
+  position:absolute!important;
+  bottom:30%!important;
+  left:0%!important;
+  padding-right:50px!important;
+  }
+  #main h1{
+    font-size:7vw;
+  }
+}
+#main .row{
+  height:600px;
+}
+
+#main .main{
+  position:absolute;
+  bottom:20%;
+  left:10%;
+  /*color:black;*/
+  /*background-color:#4267b2;;*/
+}
+
+.btn-outline-light{
+  font-size:24px!important;
+  font-family: 'Teko', sans-serif!important;
+  border-radius:0px!important;
+  border:2px solid white!important;
+  /*background:black!important;*/
+  color:white!important;
+}
+
+.btn-outline-secondary{
+  background:#4267b2!important;
+  border:2px solid #4267b2!important;
+  color:white!important;
+  font-family: 'Teko', sans-serif!important;
+  
+}
+
+.btn-outline-secondary:hover{
+  box-shadow:0px 30px 60px rgba(0,0,0,.3)!important;
+  color:white!important;
+}
+
+#over p{
+    font-family: 'Titillium Web', sans-serif!important;
+}
+
+#over img{
+  box-shadow:0px 30px 60px rgba(0,0,0,.3);
+}
+
+#info p{
+    color:black;
+    /*font-size:20px;*/
+}
+
+#contact{
+     font-family: 'Titillium Web', sans-serif!important;
+}
+
+#contact label{
+      font-family: 'Teko', sans-serif!important;
+      font-size:20px;
+}
+
+/*FOOTER*/
+footer{
+  background:#4267b2;
+  color:black;
+  font-family: 'Titillium Web', sans-serif!important;
+}
+
+footer a{
+  color:white;
+  font-family: 'Teko', sans-serif!important;
+  font-size:24px;
+}
+
+

@@ -1,0 +1,53 @@
+<% include partials/soloheader %>
+<% include partials/solonav %>
+    <nav id="Breadcrumb" class="pt-5" aria-label="Breadcrumb">
+  <ul>
+    <li class="d-inline breadcrumb-item text-small"><a href="/">Start</a></li>
+    <li class="d-inline breadcrumb-item breadcrumb-item-selected text-small"><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-center">
+            <h1 class="blue py-4 text-center">Contactgegevens</h1>
+         <hr class="horizontal-rule">   
+<p>U kunt contact met ons opnemen via info@ruimtevrij.nl , wij zullen dan zo spoedig mogelijk contact met u opnemen om een afspraak met u te maken om vrijblijvend een kijkje te komen nemen bij onze opslag en u te informeren over de mogelijkheden.
+<p class="py-3"><strong>info@ruimtevrij.nl</strong><br>
+<h2>Ruimtevrij</h2> <br>
+U kunt ons vinden aan het randje van het Emmer-centrum,<br> aan de
+Bokslootdwarsweg 20<br>
+7821 AV Emmen</p><br>
+
+      </div>
+      <div class="col-lg-6">
+    <h1 class="blue pt-4 text-center">Contactformulier</h1>
+    <hr class="horizontal-rule">
+    <form method="POST" action="send">
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Naam</label>
+    <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Uw naam">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Emailadres</label>
+    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="Uw emailadres">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Onderwerp</label>
+    <input type="text" class="form-control" name="ondw" id="exampleFormControlInput1" placeholder="Uw onderwerp">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Bericht</label>
+    <textarea class="form-control" name="bericht" id="exampleFormControlTextarea1" rows="3" placeholder="Uw bericht hier"></textarea>
+  </div>
+  <div class="modal-footer">
+          <button class="text-light btn-lg btn-outline-secondary m-auto" type="submit">Verstuur &rArr;</button>
+        </div>
+</form>
+  </div>
+  </div>
+  </div>
+</section>
+
+<% include partials/footer %>
