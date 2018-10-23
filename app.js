@@ -98,8 +98,8 @@ app.post("/send", (req, res) => {
         <li>Email : ${req.body.email}</li>
         <li>Onderwerp : ${req.body.ondw}</li>
     </ul>
-    <p>${req.body.bericht}<p>
-    `;
+    <p>Bericht : ${req.body.bericht}<p>
+    `
 
     // create reusable transporter object using the default SMTP transport
     const transporter = nodemailer.createTransport({
@@ -112,9 +112,9 @@ app.post("/send", (req, res) => {
     });
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"3DWD" <mailserver163@gmail.com>', // sender address
-        to: 'info@ruimtevrij.nl', // list of receivers
-        subject: name + ' Heeft een bericht gestuurd via Ruimtevrij.nl.', // Subject line
+        from: '"3DWD Mailserver163" <mailserver163@gmail.com>', // sender address
+        to: 'niek_losenoord@hotmail.com', // list of receivers
+        subject: name + ' Heeft een bericht gestuurd via de website.', // Subject line
         text: '', // plain text body
         html: output // html body
     };
@@ -136,5 +136,5 @@ app.post("/send", (req, res) => {
 });
 
 app.listen(process.env.PORT, process.env.IP, function() { // tell node to listen & define a port to view app
-    console.log("3D Web Dev server starting...");
+    console.log("www.ruimtevrij.nl server starting...");
 });

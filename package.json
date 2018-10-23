@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Nkvnl/portfolio#readme",
   "dependencies": {
     "compression": "^1.7.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-robots-txt": "^0.4.0",
     "express-sitemap": "^1.8.0",
