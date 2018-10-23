@@ -1,5 +1,7 @@
+@import url("imports/hovereffects.css");
+
 body{
-  padding-top:90px!important;
+  padding-top:75px!important;
   margin:0;
   padding:0;
   height:100%;
@@ -11,12 +13,16 @@ h1,h2{
   font-family: 'Teko', sans-serif!important;
 }
 
-span{
+span.blue{
   color:#266DB2;
 }
 
 span.white{
   color:white;
+}
+
+.btn, .btn-lg:hover{
+  transition:.4s ease-in-out!important;
 }
 
 a:hover{
@@ -92,8 +98,9 @@ p{
   font-size:24px;
 }
 
-.navbar-toggler-icon{
- color:white; 
+.navbar-toggler{
+  color:white;
+  font-size:24px!important;
 }
 
 #Breadcrumb ul {
@@ -112,22 +119,37 @@ p{
 }
 
 @media only screen and (max-width: 600px) {
+  body{
+  padding-top:60px!important;
+  }
   #main{
-    height:100vh;
+    height:40vh;
   }
   .main{
   position:absolute!important;
-  bottom:30%!important;
+  bottom:55%!important;
   left:0%!important;
   padding-right:50px!important;
   }
   #main h1{
     font-size:7vw;
   }
+  .navbar-brand h1{
+    font-size:7vw;
+  }
 }
 #main .row{
   height:600px;
 }
+
+@media (min-height: 1024px){
+  .main{
+     position:absolute!important;
+  bottom:50%!important;
+  left:0%!important;
+  }
+}
+
 
 #main .main{
   position:absolute;
@@ -192,6 +214,58 @@ footer a{
   color:white;
   font-family: 'Teko', sans-serif!important;
   font-size:24px;
+}
+
+footer a:hover{
+  text-decoration:none;
+}
+
+/*COOKIES!important*/
+
+#cookieConsent {
+    background-color: rgba(255,255,255,0.8);
+    min-height: 50px;
+    font-size: 14px;
+    color: #333;
+    line-height: 26px;
+    padding: 14px 0 14px 30px;
+    font-family: "Titillium Web",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#cookieConsent a {
+    color: #266db2;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    background-color: #0e47f5;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+    font-family: "Teko",Helvetica,sans-serif;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #266db2;
 }
 
 
