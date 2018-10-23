@@ -4,6 +4,7 @@ body{
   padding:0;
   height:100%;
   width:100%!important;
+  overflow-x:none!important;
 }
 
 h1,h2{

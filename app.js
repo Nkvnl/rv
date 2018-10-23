@@ -24,46 +24,39 @@ app.use((req, res, next) => {
 
 app.get('*', function(req, res, next) {
     if (req.headers['x-forwarded-proto'] != 'https')
-        res.redirect('https://www.3dwebdevelopment.com' + req.url)
+        res.redirect('http://www.ruimtevrij.nl' + req.url)
     else
         next() /* Continue to other routes if we're not redirecting */
 })
 sitemap({
     map: {
         '/': ['get'],
-        '/seo': ['get'],
-        '/responsive-design': ['get'],
-        '/9-feiten-responsive-design': ['get'],
-        '/nieuwe website': ['get'],
+        '/prijzen': ['get'],
+        '/contact': ['get'],
+        '/oefenruimte': ['get'],
+        '/opslagruime': ['get'],
+        '/avg': ['get'],
     },
     route: {
         '/': {
 
         },
-        '/seo': {
+        '/prijzen': {
 
         },
-        '/responsive-design': {
+        '/contact': {
 
         },
-        '/9-feiten-responsive-design': {
+        '/oefenruimte': {
 
         },
-        '/nieuwe-website': {
+        '/opslagruimte': {
 
         },
-        '/webdesign-emmen': {
+        '/avg': {
 
         },
-        '/website-laten-maken': {
 
-        },
-        '/website-emmen': {
-
-        },
-        '/website-voorbeeld': {
-
-        },
     },
 }).XMLtoFile();
 
@@ -87,8 +80,12 @@ app.get("/prijzen", function(req, res) {
     res.render("prijzen");
 });
 
-app.get("/AVG", function(req, res) {
+app.get("/avg", function(req, res) {
     res.render("avg");
+});
+
+app.get("/bedankt", function(req, res) {
+    res.render("bedankt");
 });
 
 app.post("/send", (req, res) => {
@@ -99,7 +96,7 @@ app.post("/send", (req, res) => {
     <ul>
         <li>Naam : ${req.body.name}</li>
         <li>Email : ${req.body.email}</li>
-        <li>Telefoon : ${req.body.ondw}</li>
+        <li>Onderwerp : ${req.body.ondw}</li>
     </ul>
     <p>${req.body.bericht}<p>
     `;
@@ -116,8 +113,8 @@ app.post("/send", (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"3DWD" <mailserver163@gmail.com>', // sender address
-        to: 'niek_losenoord@hotmail.com', // list of receivers
-        subject: name + ' Heeft een bericht gestuurd via de website.', // Subject line
+        to: 'info@ruimtevrij.nl', // list of receivers
+        subject: name + ' Heeft een bericht gestuurd via Ruimtevrij.nl.', // Subject line
         text: '', // plain text body
         html: output // html body
     };
