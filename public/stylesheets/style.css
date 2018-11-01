@@ -9,6 +9,10 @@ body{
   overflow-x:none!important;
 }
 
+#opslag img{
+  box-shadow:0px 20px 40px rgba(0,0,0,.4);
+}
+
 h1,h2{
   font-family: 'Teko', sans-serif!important;
 }
@@ -82,20 +86,28 @@ p{
 
 
 .navbar{
-  background:#266DB2!important;
+  background:#4267B2!important;
   font-family: 'Teko', sans-serif!important;
   color:black!important;
   box-shadow:0px 20px 40px rgba(0,0,0,0.4);
+  /*border-bottom:5px solid #4271ff;*/
 }
 
 .navbar-brand{
   color:black;
+  border:10px solid white;
 }
 
 .navbar .nav-link{
   font-family: 'Teko', sans-serif;
   color:white;
   font-size:24px;
+}
+
+.clip{
+  background:white!important;
+-webkit-clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);
+clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);
 }
 
 .navbar-toggler{
@@ -218,6 +230,7 @@ footer a{
 
 footer a:hover{
   text-decoration:none;
+  color:white!importantna;
 }
 
 /*COOKIES!important*/

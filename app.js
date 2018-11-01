@@ -112,8 +112,8 @@ app.post("/send", (req, res) => {
     });
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"3DWD Mailserver163" <mailserver163@gmail.com>', // sender address
-        to: 'niek_losenoord@hotmail.com', // list of receivers
+        from: '"Ruimtevrij.nl" <mailserver163@gmail.com>', // sender address
+        to: 'info@ruimtevrij.nl', // list of receivers
         subject: name + ' Heeft een bericht gestuurd via de website.', // Subject line
         text: '', // plain text body
         html: output // html body
