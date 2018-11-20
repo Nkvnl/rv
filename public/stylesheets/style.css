@@ -9,9 +9,16 @@ body{
   overflow-x:none!important;
 }
 
-#opslag img{
-  box-shadow:0px 20px 40px rgba(0,0,0,.4);
+#opslag p{
+  font-size:20px;
 }
+
+#opslag h1,h2{
+  padding-left:10px;
+  border-left:15px solid #266DB2;
+}
+
+
 
 h1,h2{
   font-family: 'Teko', sans-serif!important;
@@ -129,7 +136,10 @@ padding-right:150px!important;
 }
 
 #main{
-  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/14568109_1500373169977433_8918259016496775245_n.jpg?_nc_cat=101&_nc_ht=scontent-ams3-1.xx&oh=9e3917c7aab01636671f060de63779e6&oe=5C875AF8");
+  -webkit-box-shadow: inset 0px 0px 95px 23px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 95px 23px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 95px 23px rgba(0,0,0,0.75);
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/8.jpg");
   background-size:cover;
   height:700px;
 }
@@ -214,7 +224,7 @@ clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);
 }
 
 #over img{
-  box-shadow:0px 30px 60px rgba(0,0,0,.3);
+  /*box-shadow:0px 30px 60px rgba(0,0,0,.3);*/
 }
 
 #info p{
