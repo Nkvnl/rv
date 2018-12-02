@@ -1,14 +1,13 @@
 var express = require("express"); // call express
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
-var compression = require('compression');
 var app = express();
 var path = require('path');
 var robots = require('express-robots-txt');
 var sitemap = require('express-sitemap');
+// --------------------------------------------
 
-
-
+app.set('port', (process.env.PORT || 3006))
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.static(__dirname + "/public"));
@@ -87,7 +86,6 @@ app.get("/avg", function(req, res) {
 app.get("/bedankt", function(req, res) {
     res.render("bedankt");
 });
-
 app.post("/send", (req, res) => {
     var name = (req.body.name);
     var output = `
@@ -113,7 +111,7 @@ app.post("/send", (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Ruimtevrij.nl" <mailserver163@gmail.com>', // sender address
-        to: 'info@ruimtevrij.nl', // list of receivers
+        to: 'niek_losenoord@hotmail.com', // list of receivers
         subject: name + ' Heeft een bericht gestuurd via de website.', // Subject line
         text: '', // plain text body
         html: output // html body
@@ -135,6 +133,6 @@ app.post("/send", (req, res) => {
     });
 });
 
-app.listen(process.env.PORT, process.env.IP, function() { // tell node to listen & define a port to view app
-    console.log("www.ruimtevrij.nl server starting...");
+app.listen(app.get('port'), function() {
+    console.log('starting');
 });
